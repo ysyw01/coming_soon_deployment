@@ -1,9 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
-import AthleteFooter from "./components/AthleteFooter";
 
-export default function Home() {
+export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col bg-black text-white overflow-hidden relative">
       {/* Background Effects */}
@@ -13,7 +13,7 @@ export default function Home() {
         <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-primary/20 rounded-full blur-[120px]" />
       </div>
 
-      <main className="flex-grow h-screen flex flex-col items-center justify-center p-8 text-center relative z-10">
+      <main className="flex-grow flex flex-col items-center justify-center p-8 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -26,11 +26,11 @@ export default function Home() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-primary font-bold tracking-widest mb-4 uppercase text-sm md:text-base"
           >
-            Your Sport Your World
+            404 Error
           </motion.span>
           
           <h1 className="text-6xl md:text-9xl font-bold font-bruno mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400 drop-shadow-2xl">
-            COMING<br className="md:hidden" /> SOON
+            PAGE NOT<br className="md:hidden" /> FOUND
           </h1>
           
           <motion.div 
@@ -44,23 +44,25 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-lg md:text-2xl max-w-2xl text-gray-400 leading-relaxed"
+            className="text-lg md:text-2xl max-w-2xl text-gray-400 leading-relaxed mb-10"
           >
-            We are crafting an extraordinary digital experience for athletes and sports enthusiasts. 
-            <br className="hidden md:block" />
-            Get ready to redefine your game.
+            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
+          >
+            <Link 
+              href="/"
+              className="px-8 py-4 bg-primary text-white rounded-full font-bold text-lg hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-primary/50"
+            >
+              Back to Home
+            </Link>
+          </motion.div>
         </motion.div>
       </main>
-      
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.8 }}
-        className="relative z-10"
-      >
-        <AthleteFooter />
-      </motion.div>
     </div>
   );
 }

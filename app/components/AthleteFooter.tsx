@@ -14,14 +14,14 @@ export default function AthleteFooter() {
         
           
         <div className="flex md:flex-row flex-col mt-32 md:space-x-7 items-center md:items-end justify-end">  
-          {/* <div className="bg-lightPrimary rounded-full p-20">
+          {/* <div className="bg-primary rounded-full p-20">
             <span>YSYW</span>
           </div> */}
            <div className="flex md:flex-col  text-lg text-white mt-4 md:mt-0">
   {[FaInstagram, FaTwitter, FaLinkedin, FaFacebook].map((Icon, index) => (
     <div
       key={index}
-      className="p-3 rounded-full bg-transparent hover:bg-lightPrimary transition duration-300 ease-in-out"
+      className="p-3 rounded-full bg-transparent hover:bg-primary transition duration-300 ease-in-out"
     >
       <Icon className="cursor-pointer text-white hover:text-white" />
     </div>
@@ -54,7 +54,7 @@ export default function AthleteFooter() {
         <div className="text-center text-xs text-white opacity-75 mt-4 select-none ">
           Copyright &copy; 2025 YourSportYourWord.   <br/>All rights reserved.
         </div>
-        <div className="bg-lightPrimary  text-white text-center py-3 mt-6 underline font-semibold w-screen px-0 cursor-pointer ">
+        <div className="bg-primary  text-white text-center py-3 mt-6 underline font-semibold w-screen px-0 cursor-pointer ">
           GET IN TOUCH WITH US
         </div>
       </div>

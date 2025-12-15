@@ -164,7 +164,7 @@ export default function ContactForm() {
           placeholder="Your Name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full p-3 text-white mb-4 border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-lightPrimary"
+          className="w-full p-3 text-white mb-4 border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           required
         />
 
@@ -175,7 +175,7 @@ export default function ContactForm() {
           placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full p-3 mb-4 text-white border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-lightPrimary"
+          className="w-full p-3 mb-4 text-white border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           required
         />
 
@@ -184,7 +184,7 @@ export default function ContactForm() {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
-          className="w-full p-3 mb-4 text-white border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-lightPrimary"
+          className="w-full p-3 mb-4 text-white border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           required
         >
           <option value="" disabled className="text-gray-900">
@@ -218,7 +218,7 @@ export default function ContactForm() {
             placeholder="Please specify your subject"
             value={formData.customSubject}
             onChange={handleChange}
-            className="w-full p-3 text-white mb-4 border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-lightPrimary"
+            className="w-full p-3 text-white mb-4 border bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             required
           />
         )}
@@ -230,7 +230,7 @@ export default function ContactForm() {
           placeholder="Your Message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full p-3 h-32 border text-white bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-lightPrimary"
+          className="w-full p-3 h-32 border text-white bg-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
           required
         />
 
@@ -257,7 +257,7 @@ export default function ContactForm() {
           whileTap={{ scale: 0.95 }}
           type="submit"
           disabled={isSubmitting || (requireCaptcha && !captchaToken)}
-          className={`w-full bg-lightPrimary text-white p-3 rounded-lg mt-4 transition-all ${
+          className={`w-full bg-primary text-white p-3 rounded-lg mt-4 transition-all ${
             isSubmitting || (requireCaptcha && !captchaToken)
               ? "opacity-50 cursor-not-allowed"
               : "hover:bg-primary"
