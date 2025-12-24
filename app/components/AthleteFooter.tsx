@@ -28,15 +28,12 @@ export default function AthleteFooter() {
   ))}
 </div>
 <ul className="overflow-hidden flex-col items-start justify-end mt-4 md:mt-0 text-4xl md:text-lg cursor-pointer font-bruno text-white flex ">
-             <button onClick={() => window.location.href = "/about"}>
-               <li className="text-4xl font-bold text-center md:text-left text-gray-400 hover:text-white duration-200">About Us</li>
-             </button>
-             <button onClick={() => window.location.href = "/athlete"}>
-               <li className="text-4xl font-bold text-center md:text-left text-gray-400 hover:text-white duration-200">Talents</li>
-             </button>
-              <button onClick={() => window.location.href = "/adv"}>
-                <li className="text-4xl font-bold text-center md:text-left text-gray-400 hover:text-white duration-200">Advertise</li>
-              </button>
+              <li className="text-2xl font-bold text-center md:text-left text-gray-400 cursor-default">
+                Launching 2025
+              </li>
+              <li className="text-xl font-bold text-center md:text-left text-primary mt-2 cursor-default">
+                #YourSportYourWorld
+              </li>
               
             </ul>
         </div>
